@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4</title>
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: auto;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid black;
+            margin: 1%;
+            height: 5ch;
+        }
+
+        input:invalid {
+            border-bottom: 1px solid red;
+        }
+
+        a {
+            color: gray;
+            font-size: small;
+            margin-bottom: 5ch;
+        }
+
+        button {
+            border: none;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            height: 5ch;
+            border-radius: 25px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <form action="#" method="post">
+        <h3>Iniciar sesión</h3>
+        <label for="usr" hidden>Usuario</label>
+        <input autofocus id="usr" maxlength="25" name="usr" placeholder="Usuario..." required type="text">
+
+        <label for="pwd" hidden>Contraseña</label>
+        <input id="pwd" minlength="8" name="pwd" placeholder="Contraseña..." required type="password">
+        <a href="#">Recuperar contraseña</a>
+
+        <button id="submit" name="submit" type="submit">Iniciar sesión</button>
+    </form>
+</main>
+</body>
+</html>
