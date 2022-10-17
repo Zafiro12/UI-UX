@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 25px;
+            height: auto;
+            width: auto;
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: row;
+            border: none;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        input:invalid {
+            border-bottom: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <form>
+        <fieldset>
+            <label>
+                <input name="color" type="radio" value="azul"> Sr.
+            </label>
+            <label>
+                <input name="color" type="radio" value="negro"> Sra.
+            </label>
+        </fieldset>
+        <input type="text" name="" id="">
+    </form>
+</main>
+</body>
+</html>
