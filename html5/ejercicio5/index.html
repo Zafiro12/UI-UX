@@ -4,29 +4,67 @@
     <meta charset="UTF-8">
     <title>Ejercicio 5</title>
     <style>
+        body {
+            background-color: #f0f0f0;
+        }
+
         form {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 25px;
+            padding: 25px;
             height: auto;
-            width: auto;
+            width: 30%;
+            background-color: #fff;
         }
 
         fieldset {
             display: flex;
             flex-direction: row;
             border: none;
+            justify-content: space-evenly;
         }
 
-        input {
+        input:not([type="radio"]) {
             border: none;
             border-bottom: 1px solid black;
+            margin: 10px;
         }
 
         input:invalid {
             border-bottom: 1px solid red;
+        }
+
+        input::placeholder {
+            color: #000000;
+        }
+
+        select {
+            border: none;
+            border-bottom: 1px solid black;
+            width: auto;
+            margin: 10px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        span {
+            font-size: xx-small;
+        }
+
+        button {
+            border: none;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            height: 5ch;
+            border-radius: 25px;
+            padding: 10px;
+            margin: 25px;
         }
     </style>
 </head>
@@ -35,13 +73,86 @@
     <form>
         <fieldset>
             <label>
-                <input name="color" type="radio" value="azul"> Sr.
+                <input name="sexo" type="radio" value="sr"> Sr.
             </label>
             <label>
-                <input name="color" type="radio" value="negro"> Sra.
+                <input name="sexo" type="radio" value="sra"> Sra.
             </label>
         </fieldset>
-        <input type="text" name="" id="">
+
+        <label for="name" hidden>Nombre</label>
+        <input id="name" name="name" placeholder="Nombre/Razón Social" type="text">
+
+        <label for="surname" hidden>Apellidos</label>
+        <input id="surname" name="surname" placeholder="Apellidos" type="text" required>
+
+        <label for="email" hidden>Email</label>
+        <input id="email" name="email" placeholder="Email" type="email" required>
+
+        <label for="password" hidden>Contraseña</label>
+        <input id="password" name="password" placeholder="Contraseña" type="password" required>
+
+        <h3>Fecha de Nacimiento</h3>
+        <fieldset>
+            <label for="day" hidden>Día</label><select class="input_numero" id="day" name="day">
+            <option value="0">Día</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+            <label for="month" hidden>Mes</label><select class="input_numero" id="month" name="month">
+            <option value="0">Mes</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+
+            <label for="year" hidden>Año</label><select class="input_numero" id="year" name="year">
+            <option value="0">Año</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+        </select>
+        </fieldset>
+
+        <label for="dni" hidden>DNI</label>
+        <input id="dni" name="dni" placeholder="DNI" type="text" required>
+
+        <label for="direccion" hidden>Direccion</label>
+        <input id="direccion" name="direccion" placeholder="Direccion" type="text" required>
+
+        <label for="codigo_postal" hidden>Codigo Postal</label>
+        <input id="codigo_postal" name="codigo_postal" placeholder="Codigo Postal" type="text" required>
+
+        <label for="ciudad" hidden>Ciudad</label>
+        <input id="ciudad" name="ciudad" placeholder="Ciudad" type="text" required>
+
+        <label for="pais" hidden>Pais</label>
+        <select id="pais" name="pais">
+            <option value="0">Pais</option>
+            <option value="1">España</option>
+            <option value="2">Francia</option>
+        </select>
+
+        <label for="provincia" hidden>Provincia</label>
+        <select id="provincia" name="provincia" size="3" required>
+            <option value="0">Provincia</option>
+            <option value="1">Madrid</option>
+            <option value="2">Barcelona</option>
+        </select>
+
+        <h3>Información adicional</h3>
+        <label for="informacion_adicional" hidden>Información adicional</label>
+        <textarea id="informacion_adicional" name="informacion_adicional" rows="5" cols="30"></textarea>
+
+        <h3>Telefono/Móvil</h3>
+        <label for="telefono" hidden>Telefono</label>
+        <input id="telefono" name="telefono" type="tel" required>
+
+        <label for="politica_privacidad" hidden>Politica de privacidad</label>
+        <span>Aceptas la politica de privacidad?</span>
+        <input id="politica_privacidad" name="politica_privacidad" type="checkbox" required>
+
+        <button name="submit" type="submit">Enviar</button>
     </form>
 </main>
 </body>
