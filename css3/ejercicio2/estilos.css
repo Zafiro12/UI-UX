@@ -2,7 +2,7 @@ body, td, p {
     color: black;
     background-color: white;
 }
-.inverso {
+#inverso {
     color: white;
     background-color: black;
 }
