@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+#contenido {
+    display: flex;
+    flex-flow: column nowrap;
+}
+header {
+    background-color: skyblue;
+}
+main {
+    display: inherit;
+    flex-flow: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
+article {
+    background-color: purple;
+}
+nav {
+    background-color: yellow;
+    order: -1;
+}
+aside {
+    background-color: aquamarine;
+}
+footer {
+    background-color: skyblue;
+}
