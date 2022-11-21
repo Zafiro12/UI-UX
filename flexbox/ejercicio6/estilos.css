@@ -5,24 +5,26 @@ section#ofertas{
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 article.item-oferta {
     margin: 1rem;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 5px #ccc;
-    flex: 25%;
+    width: fit-content;
 }
 .item-oferta h3 {
     order: -2;
 }
 .item-oferta img {
     order: -1;
-    width: 100%;
+    flex: 50%;
     height: auto;
     border-radius: 5px;
 }
@@ -37,9 +39,9 @@ article.item-oferta {
     font-size: 1.2em;
     cursor: pointer;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1000px) {
     section#ofertas{
-        flex-flow: row;
+        flex-flow: row wrap;
         justify-content: flex-start;
     }
     .item-oferta {
