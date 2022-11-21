@@ -1,0 +1,24 @@
+section {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article {
+    margin: 1rem;
+}
+
+@media all and (min-width: 768px) {
+    section {
+        flex-flow: row nowrap;
+    }
+    article {
+        flex: 1;
+    }
+    article img{
+        width: 100%;
+        height: auto;
+    }
+    article.breaking {
+        flex-grow: 2;
+    }
+}
