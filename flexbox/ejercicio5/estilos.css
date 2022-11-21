@@ -1,3 +1,6 @@
+h1 {
+    text-align: center;
+}
 section {
     display: flex;
     flex-flow: column nowrap;
@@ -5,20 +8,23 @@ section {
 
 article {
     margin: 1rem;
+    display: flex;
+    flex-flow: column;
+}
+
+article img{
+    width: 100%;
+    height: auto;
 }
 
 @media all and (min-width: 768px) {
     section {
-        flex-flow: row nowrap;
+        flex-flow: row;
     }
     article {
         flex: 1;
     }
-    article img{
-        width: 100%;
-        height: auto;
-    }
     article.breaking {
-        flex-grow: 2;
+        flex: 2;
     }
 }

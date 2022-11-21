@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+section#ofertas{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+article.item-oferta {
+    margin: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    flex: 25%;
+}
+.item-oferta h3 {
+    order: -2;
+}
+.item-oferta img {
+    order: -1;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.item-oferta button {
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #f00;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+@media all and (min-width: 768px) {
+    section#ofertas{
+        flex-flow: row;
+        justify-content: flex-start;
+    }
+    .item-oferta {
+        width: 25%;
+    }
+}
