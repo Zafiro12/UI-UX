@@ -170,4 +170,12 @@ div#content main section article.news-art p {
 	article.news-art p {
 		align-self: flex-start;
 	}
+	nav#main-menu span {
+		display: none;
+	}
+	nav#main-menu ul {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
 }
