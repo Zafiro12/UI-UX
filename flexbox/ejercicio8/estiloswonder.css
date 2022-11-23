@@ -202,5 +202,10 @@ footer>small {
 /*Hay 4 artículos por fila*/
 /*La barra social y el menú adicional están uno al lado del otro*/
 @media all and (min-width: 768px) {
-	
+	main>article {
+		display: flex;
+		flex-flow: row wrap;
+		flex: 1 1 20%;
+		max-width: 20%;
+	}
 }
