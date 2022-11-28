@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*LOGO*/
+picture#logo-cabecera {
+    flex: 50%;
+}
+
+picture#logo-cabecera>img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/*ICONOS*/
+nav#bloque-iconos {
+    flex: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+nav#bloque-iconos>ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+
+    margin: 0;
+    padding: 0;
+    width: 70%;
+}
+
+nav#bloque-iconos>ul>li {
+    list-style: none;
+    margin-right: 10%;
+    font-size: 2rem;
+}
+
+nav#bloque-iconos>ul>li>a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*MENU*/
+nav#menu-principal {
+    flex: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    background-color: #000;
+    color: #fff;
+}
+
+/*HAMBURGUESA*/
+div#hamburguesa {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    font-weight: bolder;
+}
+
+/*
+div#hamburguesa:hover ~ ul#menu {
+    display: block;
+}
+*/
+
+div#hamburguesa>span {
+    font-size: 2rem;
+}
+
+div#hamburguesa>span:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+/*LISTA MENU*/
+ul#menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+ul#menu>li {
+    list-style: none;
+    display: block;
+    border-top: 1px solid #fff;
+    margin-left: 1%;
+}
+
+ul#menu li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*MAIN*/
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#form-contacto {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FORMULARIO*/
+form#contacto {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form#contacto>label {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+form#contacto>input,
+form#contacto>textarea,
+form#contacto>select {
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+form#contacto>input:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+form#contacto>input[type="button"] {
+    cursor: pointer;
+    width: 50%;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+/*FOOTER*/
+nav#menu-adicional>ul {
+    display: flex;
+    padding: 0;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav#menu-adicional>ul>li {
+    list-style: none;
+}
+
+nav#menu-adicional>ul>li>a {
+    color: #000;
+    text-decoration: none;
+}

@@ -184,6 +184,7 @@ footer>nav#menu-social-adicional>ul {
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
+	
 }
 
 
@@ -266,10 +267,6 @@ footer>small {
 		flex-flow: row wrap;
 		justify-content: center;
 		text-align: left;
-	}
-
-	footer>nav>ul>li {
-		width: 50%;
 	}
 
 	footer>nav#menu-social-adicional>ul {

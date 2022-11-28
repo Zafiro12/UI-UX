@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    width: 100%;
+    text-align: center;
+}
+
+header>* {
+    flex: 1 1;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+header nav#menu-principal {
+    display: flex;
+    flex-flow: column;
+    order: -2;
+    flex: 16.5%;
+}
+
+header nav#menu-principal>label>span {
+    font-size: 5rem;
+    color: rgb(82, 82, 82);
+}
+
+header nav#menu-principal ul {
+    margin: 0;
+    display: none;
+    flex-flow: column;
+    font-size: 4rem;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 7rem;
+    background-color: white;
+}
+
+header nav#menu-principal input {
+    display: none;
+}
+
+header nav#menu-principal input:checked~ul {
+    display: flex;
+}
+
+header picture {
+    flex: 33%;
+}
+
+header nav#buscador {
+    order: -1;
+    flex: 16.5%;
+}
+
+header nav#buscador ul {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav#compra {
+    flex: 33%;
+}
+
+header nav#compra ul {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main article.item {
+    flex: 0 0 48%;
+    margin: 1%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main article.item a {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+    font-size: 2.5rem;
+}
+
+main article.item a:last-child {
+    order: -1;
+}
+
+main article.item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    font-size: 3rem;
+}
+
+footer nav#menu-adicional ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer nav#menu-adicional li{
+    list-style-type: none;
+    /*Solo se le pone al primero????*/
+    border-bottom: 1px solid rgb(82, 82, 82); 
+}
+
+footer nav#menu-adicional a {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+footer nav#iconos-sociales ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 100%;
+    text-align: center;
+}
+
+footer nav#iconos-sociales li {
+    list-style-type: none;
+    
+    margin: 1%;
+}
+
+footer nav#iconos-sociales a {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
