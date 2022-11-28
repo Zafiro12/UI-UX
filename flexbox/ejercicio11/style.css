@@ -18,4 +18,12 @@ main {
     flex: 1;
 }
 main>form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+main>form>* {
+    flex: 100%;
+    margin: 2%;
+    font-size: xx-large;
 }
