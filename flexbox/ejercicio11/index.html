@@ -10,17 +10,16 @@
 </head>
 
 <body>
-    <div id="content">
-        <header>
-            <h1>Iniciar sesión</h1>
-        </header>
-        <main>
-            <form action="#">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="password" name="password" id="password" placeholder="Contraseña">
-                <button type="submit">Iniciar sesión</button>
-            </form>
-        </main>
+    <div class="formulario">
+        <form action="#">
+            <h2>Iniciar sesión</h2>
+            <label for="email" hidden>Introduce tu email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <label for="password" hidden>Introduce tu contraseña</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña">
+            <small><a href="#">Recuperar contraseña</a></small>
+            <input type="submit" value="Iniciar sesión">
+        </form>
     </div>
 </body>
 
