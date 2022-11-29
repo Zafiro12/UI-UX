@@ -1,0 +1,31 @@
+nav#menu-desplegable>ul {
+    text-align: center;
+    list-style: none;
+    width: fit-content;
+    background-color: #444444;
+    border: #444444 1px solid;
+    border-radius: 5px;
+}
+
+nav#menu-desplegable ul {
+    padding: 0;
+}
+
+nav#menu-desplegable>ul>li li {
+    display: none;
+}
+
+nav#menu-desplegable>ul>li:hover li {
+    display: block;
+}
+
+nav#menu-desplegable a {
+    color: #000;
+}
+
+nav#menu-desplegable li {
+    margin: 4px;
+    padding: 10px;
+    background-color: #dddddd;
+    border-radius: 5px;
+}
