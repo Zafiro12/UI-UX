@@ -10,6 +10,7 @@ body {
     
     background-color: #efefef;
 }
+
 /*HEADER*/
 header {
     background-color: #242321;
@@ -48,7 +49,7 @@ header .corazon {
 main {
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -89,6 +90,67 @@ button#filtros {
     padding: 10px 30px;
 
     font-weight: bold;
+}
+
+div#enlaces {
+    margin: 15px;
+}
+
+div#enlaces a {
+    color: #a18a75;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section#productos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 5px;
+}
+
+article.producto {
+    background-color: white;
+    color: #242321;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 5px;
+    padding: 10px;
+
+    flex: 100%;
+}
+
+article.producto>figure {
+    margin: 0;
+    position: relative;
+}
+
+article.producto>figure>img {
+    width: 100%;
+}
+
+article.producto>figure>figcaption {
+    text-align: center;
+    font-weight: bold;
+
+    background-color: white;
+    border-radius: 15px;
+
+    width: fit-content;
+
+    padding: 10px;
+
+    position: absolute;
+
+    bottom: 5%;
+    left: 30%;
 }
 
 /*FOOTER*/
