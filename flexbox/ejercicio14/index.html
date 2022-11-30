@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="menu-hamburguesa">
+            <svg xmlns="http://www.w3.org/2000/svg" class="hamburguesa" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+        </nav>
+
+        <h1>Kenay</h1>
+
+        <nav id="cesta-compra">
+            <svg xmlns="http://www.w3.org/2000/svg" class="cesta" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                    d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z">
+                </path>
+                <path d="M9 11v-5a3 3 0 0 1 6 0v5"></path>
+            </svg>
+        </nav>
+
+        <nav id="lista-deseos">
+            <svg xmlns="http://www.w3.org/2000/svg" class="corazon" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+            </svg>
+            <small>Encuentra tu sofá ideal hasta -60%</small>
+        </nav>
+    </header>
+
+    <main>
+        <div id="buscador">
+            <input type="text" placeholder="Encuentra lo que buscas">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="10" cy="10" r="7"></circle>
+                <line x1="21" y1="21" x2="15" y2="15"></line>
+            </svg>
+        </div>
+
+        <button id="filtros">
+            <svg xmlns="http://www.w3.org/2000/svg" class="hamburguesa" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <span>Mostrar filtros</span>
+        </button>
+
+        <div id="enlaces">
+            <a href="#">HOME</a>
+            <span>-</span>
+            <a href="#">NOVEDADES</a>
+        </div>
+
+        <div id="imagen_principal">
+            <figure>
+                <img src="#" alt="novedad">
+                <figcaption>Más información</figcaption>
+            </figure>
+
+            <p>COVEN FUNDA SOFÁ CHAISE GRIS</p>
+            <p id="precio">139,00 $</p>
+            <p>Entrega prevista en 3 días</p>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>Kenay Home</strong></p>
+        <p>
+            Tel. atención cliente 111222333<br>
+            De lunes a jueves de 9h - 14h y de 15h - 17h, viernes 9h - 14h
+        </p>
+
+        <a href="#">Contacto</a>
+        <a href="#">Nuestras tiendas</a>
+        <a href="#">Servicio de proyectos</a>
+
+        <p><strong>Links de interés</strong></p>
+        <!--Insertar links de interés-->
+
+        <hr>
+
+        <p><strong>Suscríbete a nuestra newsletter</strong></p>
+
+        <form action="#" method="post">
+            <input type="text" placeholder="Introduce tu email">
+            <button type="submit">Suscríbete</button>
+            <!--politica de privacidad-->
+            <input type="checkbox" name="pol" id="pol"><span>Acepto la politica de privacidad</span>
+        </form>
+
+        <hr>
+
+        <a href="#"><strong>Aviso legal</strong></a>
+
+        <hr>
+
+        <a href="#"><strong>Términos de compra</strong></a>
+    </footer>
+</body>
+
+</html>
