@@ -92,6 +92,13 @@ button#filtros {
     font-weight: bold;
 }
 
+button#filtros:hover {
+    background-color: #a18a75;
+    color: #242321;
+
+    cursor: pointer;
+}
+
 div#enlaces {
     margin: 15px;
 }
@@ -153,6 +160,16 @@ article.producto>figure>figcaption {
     left: 30%;
 }
 
+article.producto>figure:hover {
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+article.producto>figure:hover>figcaption {
+    background-color: #242321;
+    color: white;
+}
+
 article.producto>p {
     font-weight: bold;
 }
@@ -167,4 +184,84 @@ article.producto>small {
 footer {
     background-color: #242321;
     color: white;
+
+    display: flex;
+    flex-flow: column;
+
+    padding: 10px;
+}
+
+footer h3, svg {
+    color: #a18a75;
+}
+
+footer a {
+    color: white;
+
+    text-decoration: none;
+}
+
+div#links {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+div#links-interes>ul {
+    display: flex;
+    flex-flow: column;
+
+    padding: 0;
+    margin: 5px;
+}
+
+div#links-interes>ul>li {
+    list-style: none;
+}
+
+div#newsletter>form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+div#newsletter>form>div {
+    flex: 100%;
+
+    position: relative;
+
+    margin: 10px;
+}
+
+div#newsletter>form>div>input[type="text"] {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    border-radius: 30px;
+
+    padding: 10px 30px;
+}
+
+div#newsletter>form>div>button {
+    background-color: #a18a75;
+    color: #242321;
+
+    border: none;
+    border-radius: 30px;
+    outline: none;
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    padding: 10px 30px;
+
+    font-weight: bold;
+
+    position: absolute;
+
+    right: 0;
+    top: 0;
 }
