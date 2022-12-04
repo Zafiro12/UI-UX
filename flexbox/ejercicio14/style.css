@@ -138,7 +138,7 @@ article.producto>figure>img {
 
 article.producto>figure>figcaption {
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
 
     background-color: white;
     border-radius: 15px;
@@ -151,6 +151,16 @@ article.producto>figure>figcaption {
 
     bottom: 5%;
     left: 30%;
+}
+
+article.producto>p {
+    font-weight: bold;
+}
+
+article.producto>small {
+    font-weight: bold;
+
+    color: lightgray;
 }
 
 /*FOOTER*/
