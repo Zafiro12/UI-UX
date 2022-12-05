@@ -98,6 +98,9 @@ button#filtros:hover {
 
     cursor: pointer;
 }
+button#filtros:hover>svg {
+    color: #242321;
+}
 
 div#enlaces {
     margin: 15px;
