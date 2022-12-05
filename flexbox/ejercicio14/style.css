@@ -7,7 +7,7 @@ body {
     padding: 0;
 
     font-family: Arial, Helvetica, sans-serif;
-    
+
     background-color: #efefef;
 }
 
@@ -98,6 +98,7 @@ button#filtros:hover {
 
     cursor: pointer;
 }
+
 button#filtros:hover>svg {
     color: #242321;
 }
@@ -111,6 +112,28 @@ div#enlaces a {
 
     font-weight: bold;
     text-decoration: none;
+}
+
+div#oferta {
+    width: 100%;
+
+    background-color: #d23771;
+    color: white;
+
+    text-align: center;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#oferta>small {
+    width: fit-content;
+}
+
+div#oferta>small:last-child {
+    border-top: 1px solid white;
 }
 
 section#productos {
@@ -140,6 +163,28 @@ article.producto {
 article.producto>figure {
     margin: 0;
     position: relative;
+}
+
+article.producto>figure svg.corazon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3px;
+
+    color: black;
+}
+
+article.producto>figure svg.cesta {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3px;
+
+    color: black;
 }
 
 article.producto>figure>img {
@@ -194,7 +239,8 @@ footer {
     padding: 10px;
 }
 
-footer h3, svg {
+footer h3,
+svg {
     color: #a18a75;
 }
 
