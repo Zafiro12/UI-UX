@@ -1,0 +1,57 @@
+input#hamburguer-icon {
+    display: none;
+}
+
+span.hamburguer-line {
+    display: block;
+    width: 1rem;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+input#hamburguer-icon~.hamburguer-line{
+    transition: all 0.5s;
+}
+
+input#hamburguer-icon:checked~.hamburguer-line:nth-child(2) {
+    transform: rotate(45deg) translate(0px, 10px);
+}
+
+input#hamburguer-icon:checked~.hamburguer-line:nth-child(3) {
+    width: 0;
+}
+
+input#hamburguer-icon:checked~.hamburguer-line:nth-child(4) {
+    transform: rotate(-45deg) translate(0px, -10px);
+}
+
+@keyframes toCrossTop {
+    to {
+        transform: rotate(45deg) translate(0px, 10px);
+    }
+}
+
+@keyframes toCrossCenter {
+    to {
+        width: 0;
+    }
+}
+
+@keyframes toCrossBottom {
+    to {
+        transform: rotate(-45deg) translate(0px, -10px);
+    }
+}
+
+@keyframes toHamburguer {
+    to {
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+}
+
+@keyframes toHamburguerCenter {
+    to {
+        width: 1rem;
+    }
+}
