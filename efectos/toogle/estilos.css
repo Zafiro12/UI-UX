@@ -7,14 +7,22 @@ body {
     background-color: #add6ef;
 }
 
+main {
+    transition: margin-left 0.5s ease;
+}
+
 nav#menu-lateral {
     display: flex;
     flex-flow: row;
     justify-content: flex-start;
 }
 
+nav#menu-lateral label {
+    transition: margin-left 0.5s ease;
+}
+
 nav#menu-lateral ul {
-    position: relative;
+    position: fixed;
 
     list-style: none;
     margin: 0;
@@ -23,7 +31,7 @@ nav#menu-lateral ul {
     height: 100%;
     width: 0;
 
-    transition: all 0.5s ease;
+    transition: width 0.5s ease;
     
     overflow: hidden;
 
@@ -50,12 +58,20 @@ nav#menu-lateral a:hover {
     color: #222625;
 }
 
+nav#menu-lateral label {
+    margin-left: 0;
+}
+
 input#toggle-menu {
     display: none;
 }
 
-input#toggle-menu:checked ~ ul {
+input#toggle-menu:checked ~ header>nav#menu-lateral>ul {
     width: 10rem;
+}
+
+input#toggle-menu:checked ~ header>nav#menu-lateral>label, input#toggle-menu:checked ~ main {
+    margin-left: 10rem;
 }
 
 svg#boton-hamburguesa {
