@@ -8,6 +8,8 @@ span.hamburguer-line {
     height: 2px;
     background-color: #fff;
     margin: 5px 0;
+
+    cursor: pointer;
 }
 
 input#hamburguer-icon~.hamburguer-line{
@@ -24,34 +26,4 @@ input#hamburguer-icon:checked~.hamburguer-line:nth-child(3) {
 
 input#hamburguer-icon:checked~.hamburguer-line:nth-child(4) {
     transform: rotate(-45deg) translate(0px, -10px);
-}
-
-@keyframes toCrossTop {
-    to {
-        transform: rotate(45deg) translate(0px, 10px);
-    }
-}
-
-@keyframes toCrossCenter {
-    to {
-        width: 0;
-    }
-}
-
-@keyframes toCrossBottom {
-    to {
-        transform: rotate(-45deg) translate(0px, -10px);
-    }
-}
-
-@keyframes toHamburguer {
-    to {
-        transform: rotate(0deg) translate(0px, 0px);
-    }
-}
-
-@keyframes toHamburguerCenter {
-    to {
-        width: 1rem;
-    }
 }
