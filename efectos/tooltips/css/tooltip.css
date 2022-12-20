@@ -1,12 +1,8 @@
+/*EL TOOLTIP ESTA EN EL BOTON DE AJUSTES DE LA CABECERA DE SECCION*/
+
 .tooltip {
   position: relative;
   display: inline-block;
-  background-color: cornflowerblue;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 50px;
 }
 
 .tooltip .tooltiptext {
@@ -21,8 +17,7 @@
   position: absolute;
   z-index: 1;
 
-  left: -45%;
-  bottom: 110%;
+  left: -250%;
 }
 
 .tooltip:hover .tooltiptext {
@@ -32,8 +27,8 @@
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  top: 100%;
-  left: 50%;
+  top: 50%;
+  left: 100%;
   border-style: solid;
-  border-color: black transparent transparent transparent;
+  border-color: transparent transparent transparent black;
 }
