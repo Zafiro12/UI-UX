@@ -1,12 +1,16 @@
 .contenedor-input {
     position: relative;
+
     margin: 100px;
 }
-input#input {
+#input {
     border: none;
     border-bottom: 1px solid black;
     outline: none;
+
     font-size: 16px;
+
+    transition: border-bottom 0.5s ease;
 }
 span.placeholder {
     position: absolute;
@@ -18,5 +22,18 @@ span.placeholder {
 
     pointer-events: none;
 
-    color: #999;
+    color: black;
+
+    text-align: left;
+
+    transition: all 0.5s ease;
+}
+
+#input:focus {
+    border-bottom: 1px solid rgb(0, 174, 255);
+}
+
+#input:focus + span.placeholder {
+    transform: scale(0.8) translateY(-1em) translateX(-2em);
+    color: rgb(165, 165, 165);
 }
