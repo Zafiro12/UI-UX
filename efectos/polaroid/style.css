@@ -51,7 +51,6 @@ body {
   margin-top: 10px;
 }
 
-/*rotar los pares 3 grados a la derecha, y los impares 4 a la izquierda*/
 .polaroid:nth-child(even) {
   transform: rotate(3deg);
 }
