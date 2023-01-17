@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4c270d-43c9-4a06-a624-850948237d55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/multimedia/reproductor/assets/hotel-california.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multimedia/reproductor/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multimedia/reproductor/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multimedia/reproductor/style.css" afterDir="false" />
+    <list default="true" id="6b4c270d-43c9-4a06-a624-850948237d55" name="Changes" comment="multimedia">
+      <change afterPath="$PROJECT_DIR$/multimedia/reproductor/assets/player-pause.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multimedia/reproductor/assets/player-play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multimedia/reproductor/assets/player-repeat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multimedia/reproductor/assets/player-skip-back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multimedia/reproductor/assets/player-skip-forward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multimedia/reproductor/assets/player-stop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +44,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -50,6 +55,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -68,11 +74,27 @@
       <updated>1673870573105</updated>
       <workItem from="1673870576075" duration="9000" />
       <workItem from="1673872153465" duration="1473000" />
-      <workItem from="1673875004185" duration="856000" />
+      <workItem from="1673875004185" duration="990000" />
+      <workItem from="1673939899712" duration="14000" />
+      <workItem from="1673952753940" duration="150000" />
+      <workItem from="1673954069259" duration="2916000" />
     </task>
+    <task id="LOCAL-00001" summary="multimedia">
+      <created>1673876716504</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673876716504</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="multimedia" />
+    <option name="LAST_COMMIT_MESSAGE" value="multimedia" />
   </component>
 </project>

@@ -5,16 +5,24 @@
     <title>Audio</title>
 </head>
 <body>
-<audio controls id="audio">
+<audio id="audio">
     <source src="assets/hotel-california.m4a" type="audio/mpeg">
 </audio>
+
 <progress value="0" max="1" id="progress-bar"></progress>
 
-<script>
-    const audio = document.getElementById("audio");
-    const progressBar =document.getElementById("progress-bar");
+<div>
+    <button id="backwards"><img src="assets/player-skip-back.svg" alt="volver"></button>
 
-    audio.ontimeupdate(function(e){progressBar.setAttribute("value", (e.target.currentTime/e.target.duration))});
-</script>
+    <button id="stop"><img src="assets/player-stop.svg" alt="parar"></button>
+    <button id="play"><img id="play-image" src="assets/player-play.svg" alt="play/pause"></button>
+    <button id="repeat"><img src="assets/player-repeat.svg" alt="repetir"></button>
+
+    <button id="forward"><img src="assets/player-skip-forward.svg" alt="avanzar"></button>
+</div>
+
+<input type="range" value="100" id="volume">
+
+<script src="main.js"></script>
 </body>
 </html>
