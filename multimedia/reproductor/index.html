@@ -9,7 +9,7 @@
 <div class="content">
     <div class="wrap">
         <audio id="audio">
-            <source src="assets/hotel-california.m4a" type="audio/mpeg">
+            <source src="assets/audio/hotel-california.m4a" type="audio/mpeg">
         </audio>
 
         <div>
@@ -17,15 +17,17 @@
         </div>
 
         <div>
-            <button id="backwards"><img src="assets/player-skip-back.svg" alt="volver"></button>
+            <button id="backwards"><img src="assets/images/player-skip-back.svg" alt="volver"></button>
+<button id="play"><img id="play-image" src="assets/images/player-play.svg" alt="play/pause"></button>
+            <button id="stop"><img src="assets/images/player-stop.svg" alt="parar"></button>
 
-            <button id="stop"><img src="assets/player-stop.svg" alt="parar"></button>
-            <button id="play"><img id="play-image" src="assets/player-play.svg" alt="play/pause"></button>
-            <button id="repeat"><img src="assets/player-repeat.svg" alt="repetir"></button>
+            <button id="repeat"><img src="assets/images/player-repeat.svg" alt="repetir"></button>
 
-            <button id="forward"><img src="assets/player-skip-forward.svg" alt="avanzar"></button>
+            <button id="forward"><img src="assets/images/player-skip-forward.svg" alt="avanzar"></button>
 
-            <input type="range" value="100" id="volume">
+            <button id="mute"><img id="mute-image" src="assets/images/player-volume.svg" alt="avanzar"></button>
+            <label for="volume" hidden></label>
+            <input type="range" min="0" max="100" value="100" id="volume">
         </div>
     </div>
 
