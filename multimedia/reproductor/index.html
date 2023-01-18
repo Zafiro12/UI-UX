@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Audio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<audio id="audio">
-    <source src="assets/hotel-california.m4a" type="audio/mpeg">
-</audio>
+<div class="content">
+    <div class="wrap">
+        <audio id="audio">
+            <source src="assets/hotel-california.m4a" type="audio/mpeg">
+        </audio>
 
-<progress value="0" max="1" id="progress-bar"></progress>
+        <div>
+            <progress value="0" max="1" id="progress-bar"></progress>
+        </div>
 
-<div>
-    <button id="backwards"><img src="assets/player-skip-back.svg" alt="volver"></button>
+        <div>
+            <button id="backwards"><img src="assets/player-skip-back.svg" alt="volver"></button>
 
-    <button id="stop"><img src="assets/player-stop.svg" alt="parar"></button>
-    <button id="play"><img id="play-image" src="assets/player-play.svg" alt="play/pause"></button>
-    <button id="repeat"><img src="assets/player-repeat.svg" alt="repetir"></button>
+            <button id="stop"><img src="assets/player-stop.svg" alt="parar"></button>
+            <button id="play"><img id="play-image" src="assets/player-play.svg" alt="play/pause"></button>
+            <button id="repeat"><img src="assets/player-repeat.svg" alt="repetir"></button>
 
-    <button id="forward"><img src="assets/player-skip-forward.svg" alt="avanzar"></button>
+            <button id="forward"><img src="assets/player-skip-forward.svg" alt="avanzar"></button>
+
+            <input type="range" value="100" id="volume">
+        </div>
+    </div>
+
 </div>
 
-<input type="range" value="100" id="volume">
 
 <script src="main.js"></script>
 </body>

@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+div.content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+div.wrap {
+    padding: 10px;
+    border-radius: 15px;
+    background: #004166;
+}
+
+div.wrap progress {
+    width: 100%;
+}
+
+div.wrap button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background: #00acdd;
+}
