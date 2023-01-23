@@ -1,6 +1,5 @@
-*{
+* {
     box-sizing: border-box;
-    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -23,9 +22,47 @@ div.wrap {
     background: #004166;
 }
 
-div.wrap progress::-webkit-progress-value {
+div.wrap>div:last-child {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+}
+
+div.wrap progress {
+    appearance: none;
     width: 100%;
-    background: red;
+    margin: 0 0 5px 0;
+    border-radius: 50%;
+}
+
+div.wrap progress::-webkit-progress-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.wrap progress::-webkit-progress-value {
+    background-color: #00acdd;
+}
+
+div.wrap input#volume {
+    appearance:  none;
+    border-radius: 10px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.wrap input#volume::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #00acdd;
+}
+
+div.wrap input#volume::-webkit-slider-thumb:hover {
+    background: #0087ac;
+    cursor: pointer;
 }
 
 div.wrap button {
@@ -34,6 +71,7 @@ div.wrap button {
     border: none;
     background: #00acdd;
 }
+
 div.wrap button:hover {
     cursor: pointer;
     background: #0087ac;
