@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b4c270d-43c9-4a06-a624-850948237d55" name="Changes" comment="refactor">
+    <list default="true" id="6b4c270d-43c9-4a06-a624-850948237d55" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/multimedia/reproductor_video/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multimedia/reproductor_video/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multimedia/reproductor_video/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/assets/audio/hotel-california.m4a" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/assets/audio/hotel-california.m4a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/assets/images/player-mute.svg" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/assets/images/player-mute.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/assets/images/player-pause.svg" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/assets/images/player-pause.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/assets/images/player-play.svg" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/assets/images/player-play.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/assets/images/player-repeat.svg" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/assets/images/player-repeat.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/assets/images/player-skip-back.svg" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/assets/images/player-skip-back.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/assets/images/player-skip-forward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/assets/images/player-skip-forward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/assets/images/player-stop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/assets/images/player-stop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/assets/images/player-volume.svg" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/assets/images/player-volume.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multimedia/reproductor/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/multimedia/reproductor_audio/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +64,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
+    "settings.editor.selected.configurable": "configurable.group.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,7 +99,9 @@
       <workItem from="1674129094002" duration="4000" />
       <workItem from="1674129166123" duration="75000" />
       <workItem from="1674476701149" duration="438000" />
-      <workItem from="1674477596364" duration="2463000" />
+      <workItem from="1674477596364" duration="3200000" />
+      <workItem from="1674481280027" duration="204000" />
+      <workItem from="1674557540846" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="multimedia">
       <created>1673876716504</created>
@@ -115,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674049524810</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix">
+      <created>1674480165700</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674480165700</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +150,7 @@
     <MESSAGE value="hace el reproductor" />
     <MESSAGE value="le da estilo al reproductor" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
