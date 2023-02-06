@@ -5,9 +5,75 @@
 }
 
 div.content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
     width: 100vw;
     height: 100vh;
-    background: #2c2c2c;
+}
 
+div.wrap {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    background: white;
+}
+
+div.wrap > div {
     display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+}
+
+div.wrap progress {
+    appearance: none;
+    width: 100%;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+
+div.wrap progress::-webkit-progress-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.wrap progress::-webkit-progress-value {
+    background-color: #548ac5;
+}
+
+div.wrap input#volume {
+    appearance: none;
+    border-radius: 10px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.wrap input#volume::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #548ac5;
+}
+
+div.wrap input#volume::-webkit-slider-thumb:hover {
+    background: #0087ac;
+    cursor: pointer;
+}
+
+div.wrap button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background: #c77132;
+}
+
+div.wrap button:hover {
+    cursor: pointer;
+    background: #aa5e29;
 }

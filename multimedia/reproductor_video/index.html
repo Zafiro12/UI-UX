@@ -2,15 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Video</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="content">
-        <div id="reproductor" class="wrapper">
+<div class="content">
+    <div class="wrap">
+        <video width="500" height="500" id="video">
+            <source src="assets/video/video.mkv" type="audio/mpeg">
+            <source src="assets/video/video.mp4" type="video/mp4">
+            <source src="assets/video/video.ogv" type="video/ogg">
+            <source src="assets/video/video.webm" type="video/webm">
+            Tu navegador no soporta el elemento <code>video</code>.
+        </video>
 
+        <div>
+            <progress value="0" max="1" id="progress-bar"></progress><span id="time">0:00/0:00</span>
+        </div>
+
+        <div>
+            <button id="backwards"><img src="assets/images/player-skip-back.svg" alt="volver"></button>
+            <button id="play"><img id="play-image" src="assets/images/player-play.svg" alt="play/pause"></button>
+            <button id="stop"><img src="assets/images/player-stop.svg" alt="parar"></button>
+
+            <button id="repeat"><img src="assets/images/player-repeat.svg" alt="repetir"></button>
+
+            <button id="forward"><img src="assets/images/player-skip-forward.svg" alt="avanzar"></button>
+
+            <button id="mute"><img id="mute-image" src="assets/images/player-volume.svg" alt="avanzar"></button>
+            <label for="volume" hidden></label>
+            <input type="range" min="0" max="100" value="100" id="volume">
+            <button id="fullscreen"><img id="fullscreen-image" src="assets/images/fullscreen.svg" alt="avanzar">
+            </button>
         </div>
     </div>
+</div>
+
+
 <script src="main.js"></script>
 </body>
 </html>
