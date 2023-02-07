@@ -46,17 +46,23 @@
                 }
             );*/
 
-        let timeout = null;
-        $(".noticia").children("img").on("click", function (event) {
-                event.stopPropagation();
-                timeout = setTimeout(function () {
-                    console.log("click");
-                    $(this).siblings().css("display", "none");
-                }, 1000);
+            /*$(".noticia").children("img").on("click", function () {
+                $(this).siblings().css("display", "block");
             }).on("dblclick", function () {
-                    clearTimeout(timeout);
-                    console.log("dblclick")
                     $(this).siblings().css("display", "none");
+                }
+            );*/
+
+            $(".noticia").children("img").hover(function () {
+                    $(this).css("transform", "scale(1.5)");
+                    $(this).css("transform-origin", "top left");
+                    $(this).css("transition", "transform 0.5s");
+                    $(this).css("z-index", "1");
+                }, function () {
+                    $(this).css("transform", "scale(1)");
+                    $(this).css("transform-origin", "top left");
+                    $(this).css("transition", "transform 0.5s");
+                    $(this).css("z-index", "0");
                 }
             );
         }
