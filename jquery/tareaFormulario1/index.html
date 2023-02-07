@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<form>
+    <h1><label for="usuario">Usuario</label></h1>
+    <input type="text" id="usuario" name="usuario">
+</form>
+
+<script>
+    $("#usuario").focusin(function () {
+        $(this).css("outline-color", "red")
+    }).focusout(function (){
+        $(this).css("outline-color", "black")
+    })
+</script>
+</body>
+</html>
