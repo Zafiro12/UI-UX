@@ -68,4 +68,11 @@ $(document).ready(function () {
                 .addClass("fa-angle-down");
         }
     });
+    
+    // EJERCICIO 6
+    $(".item").find("img").hover(function () {
+        $(this).attr("src", $(this).attr("src").replace(".jpg", "-1.jpg"));
+    }, function () {
+        $(this).attr("src", $(this).attr("src").replace("-1.jpg", ".jpg"));
+    })
 });
