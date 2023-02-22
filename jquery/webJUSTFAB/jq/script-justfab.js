@@ -1,46 +1,71 @@
 $(document).ready(function () {
-  // EJERCICIO 1
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $("#volverarriba").fadeIn();
-    } else {
-      $("#volverarriba").fadeOut();
-    }
-  });
+    // EJERCICIO 1
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $("#volverarriba").fadeIn();
 
-  $("#volverarriba").click(function (event) {
-    event.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-  });
+            // EJERCICIO 5
+            if ($("header").find("div").css("position") == "relative") {
+                $("header")
+                    .find("div")
+                    .css("width", "100%")
+                    .css("background", "white")
+                    .css("position", "fixed")
+                    .hide()
+                    .slideDown(200);
+            }
+        } else {
+            $("#volverarriba").fadeOut();
 
-  // EJERCICIO 2
-  $("#menu").css("display", "none");
-
-  $("#menu-principal")
-    .find("span")
-    .click(function () {
-      $("#menu").stop(true).slideToggle();
+            $("header").find("div").css("position", "relative");
+        }
     });
 
-  // EJERCICIO 3
-  $("#menu>li")
-    .click(function (e) {
-      e.preventDefault();
-      $("#menu>li").find("ul").slideUp();
-      $(this).find("ul").stop(true).slideToggle();
+    $("#volverarriba").click(function (event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
 
-      // TODO: EJERCICIO 4
-      $(this)
+    // EJERCICIO 2
+    $("#menu").css("display", "none");
+
+    $("#menu-principal")
         .find("span")
-        .toggle(
-          function () {
-            $(this).stop(true).animate({ rotate: "0deg" }, "slow");
-          },
-          function () {
-            $(this).stop(true).animate({ rotate: "-90deg" }, "slow");
-          }
-        );
-    })
-    .find("span")
-    .animate({ rotate: "-90deg" }, "slow");
+        .click(function () {
+            $("#menu").stop(true, false).slideToggle();
+            $("#menu>li").children("ul").slideUp();
+            $("#menu>li")
+                .children()
+                .find("i")
+                .removeClass("fa-angle-up")
+                .addClass("fa-angle-down");
+        });
+
+    // EJERCICIO 3
+    $("#menu>li").click(function (e) {
+        e.preventDefault();
+        $(this)
+            .siblings()
+            .find("ul")
+            .slideUp()
+            .parent()
+            .find("i")
+            .removeClass("fa-angle-up")
+            .addClass("fa-angle-down");
+
+        $(this).find("ul").stop(true, false).slideToggle();
+
+        // EJERCICIO 4
+        if ($(this).find("i").hasClass("fa-angle-down")) {
+            $(this)
+                .find("i")
+                .removeClass("fa-angle-down")
+                .addClass("fa-angle-up");
+        } else {
+            $(this)
+                .find("i")
+                .removeClass("fa-angle-up")
+                .addClass("fa-angle-down");
+        }
+    });
 });
