@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+        />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <title>Tailwind CSS</title>
+        <link href="../dist/output.css" rel="stylesheet" />
+    </head>
+    <body class="bg-slate-800">
+        <div class="flex items-center h-screen" id="content">
+            <form
+                class="bg-slate-700 mx-auto space-y-5 rounded-xl px-6 py-8 shadow-xl text-white flex flex-col"
+                style="width: 20%; min-width: 300px"
+                method="post"
+            >
+                <h2 class="text-2xl font-medium">Iniciar sesión</h2>
+
+                <div class="flex flex-col space-y-1">
+                    <label for="usuario">Nombre de usuario:</label>
+                    <input
+                        autocomplete="username"
+                        class="border-sky-400 rounded bg-sky-400 outline-none p-1 text-white placeholder:text-white hover:bg-sky-500 hover:scale-105 hover:shadow-xl focus:scale-100 focus:text-black focus:bg-white ease-in duration-200"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Nombre de usuario"
+                        type="text"
+                    />
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="clave">Contraseña:</label>
+                    <input
+                        autocomplete="current-password"
+                        class="border-sky-400 rounded bg-sky-400 outline-none p-1 text-white placeholder:text-white hover:bg-sky-500 hover:scale-105 hover:shadow-xl focus:scale-100 focus:text-black focus:bg-white ease-in duration-200"
+                        id="clave"
+                        name="clave"
+                        placeholder="Contraseña"
+                        type="password"
+                    />
+                </div>
+
+                <button
+                    class="font-medium bg-green-500 text-white rounded-xl p-3 hover:cursor-pointer hover:bg-green-600 hover:scale-105 hover:shadow-xl ease-in duration-100"
+                >
+                    Iniciar sesión
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

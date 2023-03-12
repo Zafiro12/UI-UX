@@ -15,10 +15,18 @@ $(document).ready(function () {
         pb.init = function () {
             SliderInit();
 
-            $("#control-buttons").html("<li class='active'></li>");
+            $("#control-buttons").html(
+                "<li class='active'><img src='" +
+                    pb.items.panels.eq(0).find("img").attr("src") +
+                    "' /></li>"
+            );
 
             for (var i = 1; i < lengthSlider; i++) {
-                $("#control-buttons").append("<li></li>");
+                $("#control-buttons").append(
+                    "<li><img src='" +
+                        pb.items.panels.eq(i).find("img").attr("src") +
+                        "' /></li>"
+                );
             }
 
             $("#control-buttons li").click(function () {
@@ -26,10 +34,30 @@ $(document).ready(function () {
                     cambiarSlider($(this).index());
                 }
             });
+
+            $(".arrow-left, .arrow-right").click(function () {
+                if ($(this).hasClass("arrow-right")) {
+                    cambiarSlider(nextSlider);
+                } else {
+                    cambiarSlider(currentSlider - 1);
+                }
+            });
         };
 
         var SliderInit = function () {
             SliderInterval = setInterval(pb.startSlider, 3000);
+
+            $("#slider").hover(
+                function () {
+                    clearInterval(SliderInterval);
+                    $(".arrow-left, .arrow-right").fadeIn("fast");
+                },
+                function () {
+                    clearInterval(SliderInterval);
+                    $(".arrow-left, .arrow-right").fadeOut("fast");
+                    SliderInterval = setInterval(pb.startSlider, 3000);
+                }
+            );
         };
 
         var cambiarSlider = function (indice) {
