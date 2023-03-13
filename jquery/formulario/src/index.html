@@ -9,6 +9,10 @@
         <meta content="ie=edge" http-equiv="X-UA-Compatible" />
         <title>Tailwind CSS</title>
         <link href="../dist/output.css" rel="stylesheet" />
+        <link href="../dist/jquery-ui.css" rel="stylesheet" />
+        <script src="jq/jquery.js"></script>
+        <script src="jq/jquery-ui.min.js"></script>
+        <script src="main.js"></script>
     </head>
     <body class="bg-slate-800">
         <div class="flex items-center h-screen" id="content">
@@ -23,23 +27,40 @@
                     <label for="usuario">Nombre de usuario:</label>
                     <input
                         autocomplete="username"
-                        class="border-sky-400 rounded bg-sky-400 outline-none p-1 text-white placeholder:text-white hover:bg-sky-500 hover:scale-105 hover:shadow-xl focus:scale-100 focus:text-black focus:bg-white ease-in duration-200"
+                        class="border-sky-400 rounded outline-none p-1 text placeholder:text-white hover:bg-sky-500 hover:scale-102 hover:shadow-xl focus:scale-100 focus:text-black focus:bg-white ease-in duration-200"
                         id="usuario"
                         name="usuario"
                         placeholder="Nombre de usuario"
                         type="text"
                     />
+                    <span class="vacio"></span>
                 </div>
 
                 <div class="flex flex-col">
-                    <label for="clave">Contraseña:</label>
-                    <input
-                        autocomplete="current-password"
-                        class="border-sky-400 rounded bg-sky-400 outline-none p-1 text-white placeholder:text-white hover:bg-sky-500 hover:scale-105 hover:shadow-xl focus:scale-100 focus:text-black focus:bg-white ease-in duration-200"
-                        id="clave"
+                    <label for="clave">Clave especial:</label>
+                    <textarea
                         name="clave"
-                        placeholder="Contraseña"
-                        type="password"
+                        class="border-sky-400 rounded outline-none p-1 text placeholder:text-white hover:bg-sky-500 hover:scale-102 hover:shadow-xl focus:scale-100 focus:text-black focus:bg-white ease-in duration-200"
+                        id="clave"
+                        cols="30"
+                        rows="5"
+                        placeholder="Clave especial en formato sha256"
+                        style="resize: none"
+                        maxlength="100"
+                    ></textarea>
+                    <span class="vacio"></span>
+                    <span class="letras"></span>
+                </div>
+
+                <div class="flex flex-col space-y-1">
+                    <label for="date">Fecha de Cumpleaños:</label>
+                    <input
+                        autocomplete="username"
+                        class="border-sky-400 rounded outline-none p-1 text placeholder:text-white hover:bg-sky-500 hover:scale-102 hover:shadow-xl focus:scale-100 focus:text-black focus:bg-white ease-in duration-200"
+                        id="date"
+                        name="date"
+                        placeholder="Método elegido de verificación"
+                        type="text"
                     />
                 </div>
 
